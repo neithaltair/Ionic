@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="saludar()">Saludar</ion-button>
+  <ion-button (click)="despedir()">Despedir</ion-button>
+
+  <ion-grid class="fondo">
+    <ion-row>
+      <ion-col>
+        <!-- Se hace interpolacion de la variable Pantalla -->
+        <div class="pantalla"> {{pantalla}} </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col> 
+        <div class="btn">AC</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">+/-</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">%</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">/</div> 
+      </ion-col>
+      
+      <ion-col> 
+        <div class="btn" (click)="num(7)">7</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn" (click)="num(8)">8</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn" (click)="num(9)">9</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">X</div> 
+      </ion-col>
+
+      <ion-col> 
+        <div class="btn" (click)="num(4)">4</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn" (click)="num(5)">5</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn" (click)="num(6)">6</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">-</div> 
+      </ion-col>
+
+      <ion-col> 
+        <div class="btn" (click)="num(1)">1</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn" (click)="num(2)">2</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn" (click)="num(3)">3</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">+</div> 
+      </ion-col>
+
+      <ion-col size="6"> 
+        <div class="btn" (click)="num(0)">0</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">,</div> 
+      </ion-col>
+      <ion-col> 
+        <div class="btn">=</div> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
